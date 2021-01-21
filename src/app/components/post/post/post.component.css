@@ -1,0 +1,25 @@
+.post {
+  border: 1px solid grey;
+  height: 150px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.post h3 {
+  text-align: center;
+  padding: 5px;
+}
+.post button{
+  border: none;
+  background-color: darkslateblue;
+  color: yellow;
+  font-weight: bold;
+  font-size: 23px;
+}
+.post button:hover{
+  border-radius: 10px;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
