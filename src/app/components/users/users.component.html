@@ -1,0 +1,6 @@
+<div *ngFor="let user of users">
+  <app-user [user]="user" (eventEmitter)="getChosenUser($event)"></app-user>
+<!--            [chosenUser]="chosenUser"></app-user>-->
+
+</div>
+<router-outlet></router-outlet>

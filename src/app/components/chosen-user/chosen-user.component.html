@@ -1,0 +1,8 @@
+<div  *ngIf="chosenUser" class="chosenUserWrapper">
+  <h2 class="center">{{chosenUser.name}}</h2>
+  <p><b>email:</b> {{chosenUser.email}}</p>
+  <p><b>address:</b></p>
+  <p class="ml20"><b>street:</b> {{chosenUser.address.street}}</p>
+  <p class="ml20"><b>suite:</b> {{chosenUser.address.suite}}</p>
+  <p class="ml20"><b>city:</b> {{chosenUser.address.city}}</p>
+</div>
