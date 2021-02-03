@@ -1,0 +1,7 @@
+<p> {{post.id}}. {{post.title}}
+
+  <button (click)="chosenPost?.id === post.id ? closePost() : getFromChosenPost(post)"
+          [routerLink]="[post.id]" >
+    {{chosenPost?.id === post.id ? 'close post' : 'show post body'}}
+  </button>
+</p>
