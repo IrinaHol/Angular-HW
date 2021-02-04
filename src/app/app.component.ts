@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HomeworkNg';
+  title = 'homework practice';
+
+  asyncValue = new Promise(resolve => {
+    setTimeout(() => {
+      resolve('It is asyncValue');
+    }, 1000);
+  });
+
+  date = new Date();
+  price = 100;
+
+  user = {name: 'Oleg', age: 40, status: true};
+
+  e = 2.4546345804885;
 }
